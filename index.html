@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const error = params.get('error');
+            if (error) {
+                document.getElementById('error-message').textContent = decodeURIComponent(error);
+                document.getElementById('error-message').style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <div class="input-group">
+                <label for="username">Usuário:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+            <p id="error-message" class="error" style="display:none;"></p>
+        </form>
+    </div>
+</body>
+</html>

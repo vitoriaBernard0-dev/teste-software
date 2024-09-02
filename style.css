@@ -1,0 +1,297 @@
+<<<<<<< HEAD
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #444;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Container Principal */
+.login-container, .dashboard-container, .curriculum-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulários e Inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Listagem de Usuários */
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta a largura dos cartões */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.view-btn:hover {
+    background-color: #218838;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .user-card {
+        flex: 1 1 calc(50% - 20px); /* Ajusta a largura para tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container, .dashboard-container, .curriculum-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .user-card {
+        flex: 1 1 100%; /* Faz os cartões ocuparem toda a largura em dispositivos móveis */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    button, input {
+        font-size: 14px;
+    }
+
+    .view-btn, .back-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+=======
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #444;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Container Principal */
+.login-container, .dashboard-container, .curriculum-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulários e Inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Listagem de Usuários */
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta a largura dos cartões */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.view-btn:hover {
+    background-color: #218838;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .user-card {
+        flex: 1 1 calc(50% - 20px); /* Ajusta a largura para tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container, .dashboard-container, .curriculum-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .user-card {
+        flex: 1 1 100%; /* Faz os cartões ocuparem toda a largura em dispositivos móveis */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    button, input {
+        font-size: 14px;
+    }
+
+    .view-btn, .back-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+>>>>>>> a9451c3dfe69788b21995521abde373d67292752
